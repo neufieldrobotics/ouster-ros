@@ -19,7 +19,7 @@ ouster/os_driver:
     pub_static_tf: true
     proc_mask: IMU|PCL|SCAN|IMG|RAW|TLM
     scan_ring: 0
-    use_system_default_qos: true
+    use_system_default_qos: true  # false = SensorDataQoS (best effort), true = SystemDefaultsQoS (reliable)
     point_type: original
     azimuth_window_start: 0
     azimuth_window_end: 360000
